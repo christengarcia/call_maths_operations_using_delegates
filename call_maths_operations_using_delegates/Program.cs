@@ -39,3 +39,11 @@ class Application
         }
         Console.ReadLine();
     }
+
+    static void ProcessAndDisplayNumber(DoubleOp action, double value)
+    {
+        double result = action(value);
+        Console.WriteLine(
+           "Value : {0}  Result : {1}", value, result);
+    }
+}
